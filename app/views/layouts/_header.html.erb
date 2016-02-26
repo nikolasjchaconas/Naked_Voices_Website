@@ -1,0 +1,53 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Naked Voices</a>
+      <!-- make button upon collapse -->
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header_collapse" href="#header_collapse" aria-expanded="false">
+        <span class="sr-only">Toggle Navigation</span>
+        <!-- three bars for button -->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <!-- <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> -->
+
+      </button>
+    </div>
+
+	<!-- When in normal view this appears -->
+    <div class="collapse navbar-collapse navbar-right" id="header_collapse">
+    	<ul class="nav navbar-nav">
+
+        
+
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+
+         <!--  <li class="dropdown ">
+
+          <a href="/interests" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Interests <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/interests">Overview</a></li>
+            <li><a href="/interests/music">Music</a></li>
+            <li><a href="/interests/travel">Travel</a></li>
+            <li><a href="/interests/camping">Camping</a></li>
+            <li><a href="/interests/volunteer">Volunteer</a></li>
+          </ul>
+        </li> -->
+      
+        <!-- <li><a href="/resume">Resume</a></li> -->
+
+        <li><a href="https://www.facebook.com/UCSBLetsSingNakey" target="_blank">
+          <%=image_tag "facebook_share_icon.png", class:"share"%>
+        </a></li>
+        <li><a href="https://www.youtube.com/user/NakedVoices" target="_blank">
+          <%=image_tag "youtube_share_icon.png", class:"share"%>
+        </a></li>
+        <li><a href="https://www.instagram.com" target="_blank">
+          <%=image_tag "instagram_share_icon.png", class:"share"%>
+        </a></li>
+      </ul>
+     </div>
+  </div>
+</nav>

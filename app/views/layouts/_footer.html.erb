@@ -1,0 +1,37 @@
+<nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <span>
+      <div class = "footer_text">
+     <ul class="navbar-text pull-left" size = ".9">  <i>&copy;Copyright 2015 Nikolas Chaconas.</i><br>This page was updated on <%= @last_updated.strftime("%b %-d, %Y at %l:%M:%S%P") %> </ul></div>
+
+      <!-- make button upon collapse -->
+      <div class = "dropup">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Bottom-Navbar-Button" href="#Bottom-Navbar-Button" aria-expanded="false">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="glyphicon glyphicon-user white"aria-hidden="true"></span>
+      </button>
+    </span>
+    </div>
+
+    </div>
+
+  <!-- When in normal view this appears -->
+    <div class="collapse navbar-collapse pull-right" id="Bottom-Navbar-Button">
+
+      <ul class="nav navbar-nav">
+        <li><a href="https://www.facebook.com/UCSBLetsSingNakey" target="_blank">
+          <%=image_tag "facebook_share_icon.png", class:"share"%>
+        </a></li>
+        <li><a href="https://www.youtube.com/user/NakedVoices" target="_blank">
+          <%=image_tag "youtube_share_icon.png", class:"share"%>
+        </a></li>
+        <li><a href="https://www.instagram.com" target="_blank">
+          <%=image_tag "instagram_share_icon.png", class:"share"%>
+        </a></li>
+      </ul>
+     </div>
+  </div>
+</nav>
+
