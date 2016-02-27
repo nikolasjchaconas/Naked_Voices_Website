@@ -17,3 +17,37 @@
 @import "bootstrap-sprockets";
 
 @import "bootstrap";
+
+
+.navbar.navbar-inverse.navbar-fixed-top{
+	opacity: .95;
+}
+
+.navbar.navbar-inverse.navbar-fixed-bottom{
+	opacity: .97;
+}
+
+/*.navbar-header a{
+	color: blue;
+}
+
+.navbar.navbar-inverse.navbar-fixed-top li a {
+    color: blue;
+}*/
+
+/*share links*/
+.share {
+	width: 25px;
+    height: 25px;
+    border-radius: 50%;
+
+}
+/**/
+.share:hover {
+	
+}
+/*.Home_Banner {
+  background-image: url(laaf_banner.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/

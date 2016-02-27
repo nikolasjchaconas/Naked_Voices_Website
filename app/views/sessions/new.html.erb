@@ -1,0 +1,24 @@
+
+<body class = "darken">
+	<%= form_tag '/login' do %>
+<div class = "Login_field">
+	<div class = "Login_title">Login</div>
+	<div class = "white">
+
+      <div>
+        Username: <%= text_field_tag :username, "", class: "inside_login_box" %>
+      </div>
+      <br>
+      <div>
+        Password: <%= password_field_tag :password,"", class: "inside_login_box" %>
+      </div>
+      <br>
+    </div>
+      <%= submit_tag "Submit", class: "btn btn-primary btn-lg" %>
+
+</div>
+
+<%end%>
+
+
+</body>

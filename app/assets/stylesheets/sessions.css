@@ -1,0 +1,30 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+
+.Login_field{
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	text-align: center;
+	padding-top: 10%
+}
+
+.inside_login_box {
+	color:black !important;
+}
+.white {
+	color:white;
+}
+
+.Login_title {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
+	color: white;
+	padding-bottom: 10px;
+/* 	-webkit-text-stroke: 1px black;
+*/}

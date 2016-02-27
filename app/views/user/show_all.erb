@@ -1,0 +1,27 @@
+
+<div class="show_all_users">
+<div class="table-responsive" style="width:60%;margin-left: auto;margin-right: auto;">
+    <table class="table">
+      <tr style="background-color: #510152">
+        <th> Username </th>
+        <th> ID </th>
+        <th> Option </th>
+      </tr>
+      <% if @users %>
+	      <% @users.each do |user_it| %>
+	          <tr style="background-color: #FFFFFF">
+	            <td> <%= user_it.username%> </td>
+	            <td> <%= user_it.id%> </td>
+	            <%if user_it.id != 1 %>
+	            <td> <%= link_to "Delete User", delete_user_path(@user, :user_to_delete => user_it.id), method: "delete", class: "btn btn-primary btn-sm" %> </td>
+	            <%else%>
+	            	<td>You can't delete me :)</td>
+	            <%end%>
+	          </tr>
+
+	      <% end %>
+	      <%end %>
+
+    </table>
+</div>
+</div>

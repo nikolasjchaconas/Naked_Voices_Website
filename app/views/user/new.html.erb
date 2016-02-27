@@ -1,0 +1,25 @@
+<div class = "User_page">
+
+<%= form_tag '/user/:id/add_user' do %>
+	<br>
+	<div class = "white">
+	Create New User
+
+      <div>
+        Username: <%= text_field_tag :username, "", class: "inside_login_box" %>
+      </div>
+      <br>
+      <div>
+        Password: <%= password_field_tag :password,"", class: "inside_login_box" %>
+      </div>
+      <br>
+      <div>
+        Confirm Password: <%= password_field_tag :password_confirmation,"", class: "inside_login_box" %>
+      </div>
+      <br>
+    </div>
+      <%= submit_tag "Submit", class: "btn btn-primary btn-lg" %>
+
+</div>
+
+<%end%>

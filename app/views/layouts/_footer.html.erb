@@ -21,6 +21,12 @@
     <div class="collapse navbar-collapse pull-right" id="Bottom-Navbar-Button">
 
       <ul class="nav navbar-nav">
+        <% if current_user %>
+        <li><%= link_to "User " + current_user.username + "\'s Home", user_page_path(current_user) %>
+        <li><%= link_to "Logout", logout_path, method: :delete %>/li>
+        <% else %>
+        <li><a href="/login">Member Login</a></li>
+        <% end %>
         <li><a href="https://www.facebook.com/UCSBLetsSingNakey" target="_blank">
           <%=image_tag "facebook_share_icon.png", class:"share"%>
         </a></li>

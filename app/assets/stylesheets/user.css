@@ -1,0 +1,22 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+
+.User_page{
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	text-align: center;
+	padding-top: 10%
+}
+
+.show_all_users{
+	padding-top: 10%;
+}
+
+th {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
