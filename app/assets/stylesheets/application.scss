@@ -18,6 +18,11 @@
 
 @import "bootstrap";
 
+#flash {
+position: absolute;
+top:60px;
+width:100%;
+}
 
 .navbar.navbar-inverse.navbar-fixed-top{
 	opacity: .95;

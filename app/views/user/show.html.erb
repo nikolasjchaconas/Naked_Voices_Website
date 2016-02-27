@@ -5,7 +5,8 @@
 	<br>
 	<div class = "white">
 	Or,
-	Edit Your Login
+	Edit Your Login:<br>
+  Current Username is "<%= @user.username %>"
   <%= form_for :user, url: edit_user_path, method: :patch do |f| %>
       <div>
         New Username: <%= text_field_tag :username, "", class: "inside_login_box" %>

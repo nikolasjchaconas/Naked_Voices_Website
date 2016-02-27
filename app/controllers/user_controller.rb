@@ -18,16 +18,17 @@ class UserController < ApplicationController
           flash[:success] = "Your information has been updated."
           redirect_to "/user/#{@user.id}"
         else
-          flash[:error] = user.errors.full_messages.to_sentence
-          redirect_to "/"
+          flash[:error] = @user.errors.full_messages.to_sentence
+          redirect_to "/user/#{@user.id}"
         end
   end
 
   def destroy
   	user_to_delete = User.find_by(id: params[:user_to_delete])
   	user_to_delete.destroy!
-  	if(params[:user_id] == params[:user_to_delete])
-  		redirect_to "/logout"
+  	if(params[:id].to_s == params[:user_to_delete].to_s)
+      flash[:success] = "You deleted Yourself. You've been logged Out"
+  		render "/logout"
   	else
 	  	redirect_to "/user/#{params[:id]}/show_all_user"
 	end
@@ -46,11 +47,11 @@ class UserController < ApplicationController
   	user.password = params[:password]
   	user.password_confirmation = params[:password_confirmation]
   	if user.save
-  		flash[:success] = "New Account Successfully Created!"
+  		flash[:success] = "New User Login Successfully Created!"
   		redirect_to "/user/:id"
   	
   	else
-  		flash[:error] = "Problem creating account"
+  		flash[:error] = user.errors.full_messages.to_sentence
   		redirect_to "/user/:id/add_user"
   	end
   end

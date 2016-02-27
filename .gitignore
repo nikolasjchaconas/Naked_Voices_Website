@@ -1,4 +1,5 @@
+log
 tmp
 .idea
 .DS_Store
-Gemfile.lock
+Gemfile.*
