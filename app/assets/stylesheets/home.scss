@@ -9,6 +9,7 @@
 
 body { 
 	padding-top: 105px;
+	padding-bottom: 80px;
   background: url(laaf_banner.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -19,16 +20,16 @@ body {
 .darken {
   background-image: 
     linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
     ),
     url(laaf_banner.jpg);
 }
 
-.Large_title {
+.Home_title {
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
-	font-size: 70px;
+	font-size: 85px;
 	text-align: center;
 	color: white;
 /* 	-webkit-text-stroke: 1px black;

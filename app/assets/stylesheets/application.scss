@@ -32,14 +32,48 @@ width:100%;
 	opacity: .97;
 }
 
-/*.navbar-header a{
-	color: blue;
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: white;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #B9C5C8;
+  /*font-weight: bold;*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+.footer_text {
+  color: #B9C5C8;
+  /*font-weight: bold;*/
+  font-family: 'Roboto', sans-serif;
+  /*font-size: 20px;*/
 }
 
-.navbar.navbar-inverse.navbar-fixed-top li a {
+.navbar-inverse .navbar-header>a{
+	color: #B9C5C8;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/*.navbar.navbar-inverse.navbar-fixed-top li a {
     color: blue;
+}
+
+.navbar.navbar-inverse.navbar-fixed-top:hover li a {
+    color: white;
 }*/
 
+/*.collapse .navbar-collapse .navbar-right li a{
+  color: blue;
+}
+
+.nav .navbar-nav {
+  color: blue;
+}*/
+
+.collapse .navbar-collapse .navbar-right li a{
+    color: white;
+}
 /*share links*/
 .share {
 	width: 25px;
@@ -51,8 +85,11 @@ width:100%;
 .share:hover {
 	
 }
-/*.Home_Banner {
-  background-image: url(laaf_banner.jpg); 
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
+.Large_title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 70px;
+  text-align: center;
+  color: white;
+/*  -webkit-text-stroke: 1px black;
+*/}
