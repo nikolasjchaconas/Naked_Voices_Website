@@ -27,6 +27,43 @@
 	width: 101px;
 }
 
+@media (min-width:768px) {
+	.Event_description {
+		padding: 2px;
+		padding-right: 4px;
+		padding-left: 4px;
+		border-style: solid;
+		font-family: 'Roboto', sans-serif;
+		/*font-weight: bold;*/
+		width: 50%;
+		font-size: 25px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		color: white;
+	}
+	.Event_writing_no_bold {
+		font-family: 'Roboto', sans-serif;
+		width: 60%;
+		font-size: 25px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		color: white;
+
+	}
+	.Event_writing {
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
+		width: 60%;
+		font-size: 25px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		color: white;
+	}
+
+}
 .Event_description {
 	padding: 2px;
 	padding-right: 4px;
@@ -34,7 +71,6 @@
 	border-style: solid;
 	font-family: 'Roboto', sans-serif;
 	/*font-weight: bold;*/
-	width: 50%;
 	font-size: 25px;
 	margin-left: auto;
 	margin-right: auto;
@@ -44,7 +80,6 @@
 
 .Event_writing_no_bold {
 	font-family: 'Roboto', sans-serif;
-	width: 60%;
 	font-size: 25px;
 	margin-left: auto;
 	margin-right: auto;
@@ -55,7 +90,6 @@
 .Event_writing {
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
-	width: 60%;
 	font-size: 25px;
 	margin-left: auto;
 	margin-right: auto;
