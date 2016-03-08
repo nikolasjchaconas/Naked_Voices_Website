@@ -22,7 +22,7 @@
 body { 
   padding-top: 105px;
   padding-bottom: 80px;
-  background-image: url(laaf_banner.jpg) no-repeat center center fixed; 
+  background-image: image-url(laaf_banner.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -35,7 +35,7 @@ body {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
-    url(laaf_banner.jpg);
+    image-url(laaf_banner.jpg);
 }
 
 
