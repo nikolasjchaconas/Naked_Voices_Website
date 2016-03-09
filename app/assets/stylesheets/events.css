@@ -13,8 +13,7 @@
 }
 
 .pay_link_venmo:hover{
-	height:31px;
-	width: 93px;
+	border: 1px solid grey;
 }
 
 .pay_link_tilt {
@@ -23,8 +22,7 @@
 }
 
 .pay_link_tilt:hover{
-	height:29px;
-	width: 101px;
+	border: 1px solid grey;
 }
 
 @media (min-width:768px) {
