@@ -1,0 +1,28 @@
+2016/03/08 22:57:39 [emerg] 1462#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/03/08 22:57:39 [emerg] 1462#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/03/08 22:57:39 [emerg] 1462#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/03/08 22:57:39 [emerg] 1462#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/03/08 22:57:39 [emerg] 1462#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2016/03/08 22:57:39 [emerg] 1462#0: still could not bind()
+[ 2016-03-08 22:57:56.6537 1479/7fdbdf72d780 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-03-08 22:57:56.6645 1482/7f6e20fa6780 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-03-08 22:57:56.6657 1482/7f6e20fa6780 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-03-08 22:57:56.6707 1482/7f6e20fa6780 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 1482
+[ 2016-03-08 22:57:56.6876 1489/7fb6bbb83780 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-03-08 22:57:56.6900 1489/7fb6bbb83780 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 1489
+2016/03/08 22:57:58 [error] 1497#0: *4 "/home/ubuntu/Naked_Voices_Website/config/initializers/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "HEAD / HTTP/1.1", host: "0.0.0.0"
+
+[ 2016-03-08 22:58:32.5219 1482/7f6e1ef50700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-03-08 22:58:32.5219 1482/7f6e20fa6780 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-03-08 22:58:32.5220 1482/7f6e1ef50700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-03-08 22:58:32.5220 1482/7f6e1ef50700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+
+[ 2016-03-08 22:58:32.5221 1489/7fb6b9d0c700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-03-08 22:58:32.5221 1489/7fb6bbb83780 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-03-08 22:58:32.5221 1489/7fb6b950b700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-03-08 22:58:32.5221 1489/7fb6b950b700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-03-08 22:58:32.5222 1489/7fb6b9d0c700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-03-08 22:58:32.5223 1489/7fb6bbb83780 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished
+[ 2016-03-08 22:58:32.5229 1482/7f6e1e74f700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-03-08 22:58:32.5229 1482/7f6e1e74f700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-03-08 22:58:32.5343 1482/7f6e20fa6780 age/Cor/CoreMain.cpp:967 ]: Passenger core shutdown finished
