@@ -4,11 +4,34 @@
 <div class = "Smaller_subtitle">UCSB's Premiere Co-ed A Cappella Group</div>
 </div>
 <br>
- <div class = "Event_writing_no_bold">
-		Help support Naked Voices fund their spring concert this quarter!<br>
 
-		<iframe src="https://www.indiegogo.com/project/naked-voices-spring-concert/embedded/13320504" width="222px" height="445px" frameborder="0" scrolling="no"></iframe>
+ 	<div class = "Home_event_no_bold">
+ 		<div style="float:left; width:50%; padding: 10px;">
+			Help support Naked Voices fund their spring concert this quarter! All donations over $5 come with a ticket to our concert and a raffle entry to win two pairs of tickets to Pentatonix on April 30th! Support us on Indiegogo by clicking the image below or click <%=link_to "here", show_events_path, class: "btn btn-primary btn-lg"%> to learn more.
 
+			
+
+			<br><br>
+			<center><iframe src="https://www.indiegogo.com/project/naked-voices-spring-concert/embedded/13320504" width="222px" height="445px" frameborder="0" scrolling="no"></iframe></center>
+			
 		</div>
+		
+		<div style="float:right; width:50%; padding: 10px;">
+			Join Naked Voices in seeing Pentatonix at the Santa Barbara Bowl on Saturday, April 30, 2016 at 7:00pm! Buy tickets by clicking the image below.
+			Want to find out how you can enter a raffle to win two pairs of tickets to this concert for FREE?<br>
+			<%=link_to "Learn more", show_events_path, class: "btn btn-primary btn-lg"%><br>
+			<br>
+			<a href = "http://www.axs.com/events/306896/pentatonix-tickets?skin=sbbowl">
+			<%= image_tag "pentatonix.jpg", class: "pentatonix_home_image" %></a>
+			
+		</div>
+
+
+	</div>
+
+
 </body>
 </html>
+
+
+

@@ -15,6 +15,9 @@
 /* 	-webkit-text-stroke: 1px black;
 */}
 
+iframe {
+	display:block;
+}
 .Smaller_subtitle {
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
@@ -23,3 +26,41 @@
 	color: white;
 /* 	-webkit-text-stroke: 1px black;
 */}
+
+
+@media (min-width:768px) {
+	.Home_event_no_bold {
+		text-align: center;
+		font-family: 'Roboto', sans-serif;
+		font-size: 20px;
+		color: white;
+		vertical-align: middle;
+		display: inline-block;
+		margin: 0 auto;
+		padding: 25px;
+
+
+	}
+
+
+}
+
+.Home_event_no_bold {
+	margin: 0 auto;
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	color: white;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.pentatonix_home_image {
+	width:60%;
+	height:80%;
+}
+
+.pentatonix_home_image:hover{
+	width:61%;
+	height:81%;
+}
