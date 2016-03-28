@@ -2,6 +2,16 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+
+.Event_large_title {
+  font-family: 'Francois One', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+/*  -webkit-text-stroke: 1px black;
+*/}
+
 .event_photo {
 	width: 95%;
 	height: auto;
@@ -55,19 +65,29 @@ a:visited {
 	float:left;
 	width:50%;
 	text-align: left;
+	font-size: 15px;
 }
 
 .event_right_column {
 	float:right;
 	width:50%;
 	text-align: left;
+	font-size: 15px;
 }
 @media (min-width:768px) {
+	.Event_large_title {
+	  font-family: 'Francois One', sans-serif;
+	  font-weight: bold;
+	  font-size: 85px;
+	  text-align: center;
+	  color: white;
+	}
 	.event_left_column {
 		float:left;
 		width:50%;
 		padding-right: 40px;
 		text-align: left;
+		font-size: 20px;
 	}
 
 	.event_right_column {
@@ -75,6 +95,7 @@ a:visited {
 		width:50%;
 		padding-left: 40px;
 		text-align: left;
+		font-size: 20px;
 	}
 	.event_photo {
 		width: 65%;
@@ -91,11 +112,10 @@ a:visited {
 	}
 	.Event_description {
 		font-family: 'Francois One', sans-serif;
-		
-		font-size: 25px;
 		color: white;
 		display:inline-block;
 	}
+
 	.Event_writing_no_bold {
 		font-family: 'Francois One', sans-serif;
 		width: 60%;
@@ -128,7 +148,6 @@ a:visited {
 .Event_description {
 	font-family: 'Francois One', sans-serif;
 	width: 98%;
-	font-size: 25px;
 	color: white;
 	display:inline-block;
 }
@@ -156,13 +175,7 @@ a:visited {
 	color: #AE0001;
 }
 .event_important_color {
-	font-size: 30px;
 	color: #AE0001;
 	font-weight: bold;
 
-}
-.smaller_event_important_color {
-	font-size: 25px;
-	color: #AE0001;
-	font-weight: bold;
 }
