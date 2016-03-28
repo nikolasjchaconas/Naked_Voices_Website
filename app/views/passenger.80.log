@@ -1,0 +1,25 @@
+[ 2016-03-28 08:20:09.6971 25935/7fa358c3d780 age/Wat/WatchdogMain.cpp:1276 ]: Starting Passenger watchdog...
+[ 2016-03-28 08:20:09.7005 25938/7f5a13fc3780 age/Cor/CoreMain.cpp:982 ]: Starting Passenger core...
+[ 2016-03-28 08:20:09.7007 25938/7f5a13fc3780 age/Cor/CoreMain.cpp:235 ]: Passenger core running in multi-application mode.
+[ 2016-03-28 08:20:09.7018 25938/7f5a13fc3780 age/Cor/CoreMain.cpp:732 ]: Passenger core online, PID 25938
+[ 2016-03-28 08:20:09.7058 25943/7fba5b5af780 age/Ust/UstRouterMain.cpp:529 ]: Starting Passenger UstRouter...
+[ 2016-03-28 08:20:09.7062 25943/7fba5b5af780 age/Ust/UstRouterMain.cpp:342 ]: Passenger UstRouter online, PID 25943
+2016/03/28 08:20:11 [error] 25953#0: *4 "/home/ubuntu/Naked_Voices_Website/app/views/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "HEAD / HTTP/1.1", host: "0.0.0.0"
+2016/03/28 08:20:13 [error] 25953#0: *5 "/home/ubuntu/Naked_Voices_Website/app/views/public/index.html" is not found (2: No such file or directory), client: 184.187.162.7, server: _, request: "GET / HTTP/1.1", host: "nakedvoicesmusic.com", referrer: "http://nakedvoicesmusic.com/contact"
+2016/03/28 08:20:13 [error] 25953#0: *5 open() "/home/ubuntu/Naked_Voices_Website/app/views/public/favicon.ico" failed (2: No such file or directory), client: 184.187.162.7, server: _, request: "GET /favicon.ico HTTP/1.1", host: "nakedvoicesmusic.com", referrer: "http://nakedvoicesmusic.com/"
+2016/03/28 08:20:16 [error] 25953#0: *5 "/home/ubuntu/Naked_Voices_Website/app/views/public/index.html" is not found (2: No such file or directory), client: 184.187.162.7, server: _, request: "GET / HTTP/1.1", host: "nakedvoicesmusic.com", referrer: "http://nakedvoicesmusic.com/contact"
+2016/03/28 08:20:16 [error] 25953#0: *5 open() "/home/ubuntu/Naked_Voices_Website/app/views/public/favicon.ico" failed (2: No such file or directory), client: 184.187.162.7, server: _, request: "GET /favicon.ico HTTP/1.1", host: "nakedvoicesmusic.com", referrer: "http://nakedvoicesmusic.com/"
+
+[ 2016-03-28 08:20:27.1526 25938/7f5a11f6d700 age/Cor/CoreMain.cpp:532 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-03-28 08:20:27.1526 25938/7f5a13fc3780 age/Cor/CoreMain.cpp:901 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-03-28 08:20:27.1526 25938/7f5a1176c700 Ser/Server.h:817 ]: [ApiServer] Freed 0 spare client objects
+[ 2016-03-28 08:20:27.1526 25938/7f5a1176c700 Ser/Server.h:464 ]: [ApiServer] Shutdown finished
+[ 2016-03-28 08:20:27.1527 25938/7f5a11f6d700 Ser/Server.h:817 ]: [ServerThr.1] Freed 128 spare client objects
+[ 2016-03-28 08:20:27.1527 25938/7f5a11f6d700 Ser/Server.h:464 ]: [ServerThr.1] Shutdown finished
+
+[ 2016-03-28 08:20:27.1528 25943/7fba59738700 age/Ust/UstRouterMain.cpp:422 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ 2016-03-28 08:20:27.1529 25943/7fba5b5af780 age/Ust/UstRouterMain.cpp:492 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ 2016-03-28 08:20:27.1529 25943/7fba58f37700 Ser/Server.h:817 ]: [UstRouterApiServer] Freed 0 spare client objects
+[ 2016-03-28 08:20:27.1529 25943/7fba58f37700 Ser/Server.h:464 ]: [UstRouterApiServer] Shutdown finished
+[ 2016-03-28 08:20:27.1530 25943/7fba59738700 Ser/Server.h:464 ]: [UstRouter] Shutdown finished
+[ 2016-03-28 08:20:27.1531 25943/7fba5b5af780 age/Ust/UstRouterMain.cpp:523 ]: Passenger UstRouter shutdown finished

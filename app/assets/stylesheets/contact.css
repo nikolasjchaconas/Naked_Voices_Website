@@ -3,7 +3,8 @@
   They will automatically be included in application.css.
 */
 
-
+@import url(http://fonts.googleapis.com/css?family=Nunito:400,900);
+@import url(https://fonts.googleapis.com/css?family=Francois+One);
 .Contact_heading {
 	font-family: 'Francois One', sans-serif;
 	font-weight: bold;
