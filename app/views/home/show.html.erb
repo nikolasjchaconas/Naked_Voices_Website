@@ -1,13 +1,14 @@
 <html>
 <body class = "darken">
-<div class = "Home_title">Naked Voices
-<div class = "Smaller_subtitle">UCSB's Premiere Co-ed A Cappella Group</div><br>
+<div class = "Home_title">NAKED VOICES
+<div class = "Smaller_subtitle">UCSB's Premiere Co-ed A Cappella Group</div>
 </div>
 <div class = "Smaller_subtitle">We're giving away two tickets to Pentatonix!</div><br>
 <center><%=link_to "See Details on Entry", show_events_path, class: "btn btn-primary btn-lg"%></center>
  	<div class = "Home_event_no_bold">
  		<div style="float:left; width:50%; padding: 10px;">
-			Help support Naked Voices fund their spring concert this quarter! All donations over $5 come with a ticket to our concert and a raffle entry to win two pairs of tickets to Pentatonix on April 30th! Support us on Indiegogo by clicking the image below or learn more on how to enter the giveaway. <br> <%=link_to "Learn More", show_events_path, class: "btn btn-primary btn-lg"%>
+ 			<span class = "larger">
+			Help support Naked Voices! </span> <br><br>All donations over <span class = "home_important_color"> $5 </span>come with a ticket to our concert and a raffle entry to win two pairs of tickets to Pentatonix on April 30th! Support us on <span class = "home_important_color"> Indiegogo </span> by clicking the image below or learn more on how to enter the giveaway. <br> <%=link_to "Learn More", show_events_path, class: "btn btn-primary btn-lg"%>
 			
 
 			<br><br>
@@ -16,11 +17,12 @@
 		</div>
 		
 		<div style="float:right; width:50%; padding: 10px;">
-			Join Naked Voices in seeing Pentatonix at the Santa Barbara Bowl on Saturday, April 30, 2016 at 7:00pm! Buy tickets by clicking the image below.
-			Want to find out how you can enter a raffle to win two pairs of tickets to this concert for FREE?<br>
+			<span class = "larger">
+			Win the chance to see Pentatonix live!</span><br><br>
+			Join Naked Voices in seeing Pentatonix at the Santa Barbara Bowl on Saturday, <span class = "home_important_color">April 30</span>, 2016 at <span class = "home_important_color">7pm</span>! Buy tickets by clicking the image below, or click "Learn More" to find out how you can <span class = "home_important_color">win</span> a pair of tickets! <br>
 			<%=link_to "Learn More", show_events_path, class: "btn btn-primary btn-lg"%><br>
 			<br>
-			<a href = "http://www.axs.com/events/306896/pentatonix-tickets?skin=sbbowl">
+			<a href = "http://www.axs.com/events/306896/pentatonix-tickets?skin=sbbowl" target = "_blank">
 			<%= image_tag "pentatonix.jpg", class: "pentatonix_home_image" %></a>
 			
 		</div>
