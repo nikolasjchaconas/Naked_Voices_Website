@@ -81,7 +81,9 @@ class UserController < ApplicationController
         index = @users.index(user_it) + 1
       end
       puts "index is #{index}"
-      @users.insert(index, user)
+      if(user.username != "Guest")
+        @users.insert(index, user)
+      end
       @total += user.num_sold
       
     end
