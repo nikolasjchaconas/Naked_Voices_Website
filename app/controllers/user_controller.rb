@@ -1,5 +1,5 @@
 class UserController < ApplicationController
-  before_filter :logged_in, :only => [:show, :edit, :show_all]
+  before_filter :logged_in, :only => [:show, :edit, :show_all, :leaderboard]
   before_filter :correct_user, :only => [:show, :edit, :show_all]
   def show
   	@user = User.find_by(id: session[:user_id])
@@ -36,6 +36,16 @@ class UserController < ApplicationController
   	redirect_to "/"
   end
 
+  def change_user_sold
+    user = User.find_by(id: params[:user_to_change])
+    if (params[:commit] == "Add Entries")
+      user.update_attribute(:num_sold, user.num_sold + params[:num].to_i)
+    else
+      user.update_attribute(:num_sold, user.num_sold - params[:num].to_i)
+    end
+    redirect_to "/leaderboard"
+  end
+
   def show_all
   	  	  	@last_updated = File.mtime("app/views/home/show.html.erb")
   	  	  	@user = User.find_by(id: params[:id])
@@ -46,14 +56,38 @@ class UserController < ApplicationController
   	user = User.new(username: params[:username])
   	user.password = params[:password]
   	user.password_confirmation = params[:password_confirmation]
+    user.num_sold = 0
   	if user.save
   		flash[:success] = "New User Login Successfully Created!"
   		redirect_to "/user/:id"
   	
   	else
   		flash[:error] = user.errors.full_messages.to_sentence
-  		redirect_to "/user/:id/add_user"
+  		redirect_to "/user/#{user.id}/add_user"
   	end
+  end
+
+  def leaderboard
+    @users = []
+    @total = 0
+    index = 0
+    all_users = ["Nikolas", "Peyton", "Francesca","Ali", "Ari", "Ashley", "Blain", "David", "Emmy", "Hunter", "Joe", "Julian", "Nicky", "Nico", "Nissi"]
+    all_users.each do |username|
+      user = User.find_by(username: username)
+      @users.each do |user_it|
+        if user.num_sold > user_it.num_sold
+          index = @users.index(user_it)
+          break
+        end
+        index = @users.index(user_it) + 1
+      end
+      puts "index is #{index}"
+      @users.insert(index, user)
+      @total += user.num_sold
+      
+    end
+    @largest = @users[0].num_sold
+
   end
 
   private

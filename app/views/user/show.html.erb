@@ -1,5 +1,7 @@
 <body class = "darken">
 <div class = "User_page">
+<%=link_to "Look at Tshirt Leaderboards", leaderboard_page_path(@user), class: "btn btn-primary btn-lg"%>
+<br><br>
 <%=link_to "Add New User", new_user_path(@user), class: "btn btn-primary btn-lg"%>
 <%=link_to "Delete a User", show_all_user_path(@user), class: "btn btn-primary btn-lg"%>
 

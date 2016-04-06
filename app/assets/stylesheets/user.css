@@ -19,3 +19,24 @@ th {
 	font-family: 'Roboto', sans-serif;
 	color: white;
 }
+
+.name_subtitle {
+	font-family: 'Francois One', sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: left;
+	color: white;
+/* 	-webkit-text-stroke: 1px black;
+*/}
+
+.leaderboard {
+	width:70%;
+	margin:auto;
+}
+
+.change_box {
+	color:black !important;
+	width:50px;
+	text-align: center;
+
+}

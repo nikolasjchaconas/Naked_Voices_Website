@@ -1,0 +1,43 @@
+<html>
+<body class = "darken">
+<div class = "Large_title">Leaderboard
+<div class = "Smaller_subtitle">Total tickets sold: <%= @total %></div>
+</div>
+
+
+<div class = "leaderboard">
+<% @users.each do |user| %>
+	<div class = "name_subtitle">
+	<%= user.username %>
+	<% if @largest != 0 %>
+		<% user_total = ((user.num_sold.to_f/@largest *100).to_i).to_s + "%" %>
+	<% else %>
+		<% user_total = 0 %>
+	<%end%>
+
+	<% if current_user %>
+		<% if current_user.id == 1 || current_user.id == 2 %>
+			<%= form_for :user, url: change_user_sold_path(:user_to_change => user.id), method: :patch do |f| %>
+				<%= text_field_tag :num, 0, class: "change_box" %>
+			<%= f.submit "Add Entries", class: "btn btn-primary btn-sm" %>
+			<%= f.submit "Remove Entries", class: "btn btn-primary btn-sm" %>
+			<%end%>
+		<% end %>
+	<% end %>
+
+</div>
+	<div class="progress">
+	  <div class="progress-bar" role="progressbar"
+	  aria-valuemin="0" aria-valuemax="<%= @largest %>" style="width:<%= user_total %>">
+	  	<%if user.num_sold != 0%>
+	    	<span><%= user.num_sold %> Sold</span>
+	    <% else %>
+	    	<span style = "color: black;"><%= user.num_sold %> Sold</span>
+	    	<%end%>
+	  </div>
+	</div>
+<% end %>
+</div>
+
+</body>
+</html>

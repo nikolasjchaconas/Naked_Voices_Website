@@ -19,7 +19,11 @@ Rails.application.routes.draw do
 
   delete '/user/:id/show_all_user' => 'user#destroy', as: :delete_user
 
+  patch '/leaderboard' => 'user#change_user_sold', as: :change_user_sold
+
   get '/user/:id' => 'user#show', as: :user_page
+
+  get '/leaderboard' => 'user#leaderboard', as: :leaderboard_page
 
   patch '/user/:id' => 'user#edit', as: :edit_user
 

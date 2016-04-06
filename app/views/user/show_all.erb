@@ -12,10 +12,10 @@
 	          <tr style="background-color: #FFFFFF">
 	            <td> <%= user_it.username%> </td>
 	            <td> <%= user_it.id%> </td>
-	            <%if user_it.id != 1 %>
+	            <%if current_user.id == 1 %>
 	            <td> <%= link_to "Delete User", delete_user_path(@user, :user_to_delete => user_it.id), method: "delete", class: "btn btn-primary btn-sm" %> </td>
 	            <%else%>
-	            	<td>You can't delete me :)</td>
+	            	<td>No options to Display</td>
 	            <%end%>
 	          </tr>
 
