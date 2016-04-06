@@ -71,9 +71,8 @@ class UserController < ApplicationController
     @users = []
     @total = 0
     index = 0
-    all_users = ["Nikolas", "Peyton", "Francesca","Ali", "Ari", "Ashley", "Blain", "David", "Emmy", "Hunter", "Joe", "Julian", "Nicky", "Nico", "Nissi"]
-    all_users.each do |username|
-      user = User.find_by(username: username)
+    all_users = User.all
+    all_users.each do |user|
       @users.each do |user_it|
         if user.num_sold > user_it.num_sold
           index = @users.index(user_it)
