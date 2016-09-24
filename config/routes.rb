@@ -37,6 +37,8 @@ Rails.application.routes.draw do
 
   get '/events' => 'events#show', as: :show_events
 
+  get '/events/download' => 'events#download', as: :events_download
+
   get '/events/edit' => 'events#edit', as: :edit_events
 
 
